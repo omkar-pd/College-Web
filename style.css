@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/*  For Logo*/
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  /* margin-left: 25px; */
+}
+.mynav {
+  color: white !important;
+}
+
+/* Style the search field */
+form.example input[type="text"] {
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  margin-left: none;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 15%;
+  padding: 5px;
+  background: #2196f3;
+  color: white;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+/*form.example button:hover {
+  background: #0b7dda;
+}
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100% !important;
+  height: 375px !important;
+  margin: auto;
+}
+
+.card {
+  border: 0px solid black;
+  box-shadow: 4px 3px;
+  border-radius: 25px;
+  background: #7bcdfc !important;
+  padding: 5px;
+}
+.card-btn {
+  position: absolute;
+  left: 29%;
+  /* box-shadow: 2px 3px 2px 2px black; */
+  border-radius: 30px;
+  background-color: #343a40;
+  /* background-color: #000080 !important; */
+  /* padding: 8px; */
+}
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+  background-color: black !important;
+  color: white !important;
+}
+ul.dropdown-menu a:hover {
+  background-color: white;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  background-color: black !important;
+  color: white !important;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+  text-decoration: underline;
+  transform: rotate(-90deg);
+}
+nav ul li a:hover {
+  /* border-bottom: 1px solid red; */
+  text-decoration: none !important;
+  /* box-shadow: 4px 5px !important; */
+  border-radius: 5px;
+}
+
+ul li a:hover {
+  color: black !important;
+  text-decoration: none !important;
+  /* background-color: #fe7f9c !important; */
+}
+
+.mynav ul li a {
+  font-weight: 600;
+}
+
+/* Media Queries for responsive website */
+@media only screen and (max-width: 1150px) {
+  .my-card {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-card > :first-child {
+    margin-left: -55px;
+  }
+  .my-video {
+    margin-left: 0rem !important;
+    padding-left: 0px !important;
+  }
+  .my-video iframe {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .col-12 > :first-child {
+    margin-left: -60px;
+  }
+}
+
+#btn-back-to-top {
+  box-shadow: none;
+  background-color: red !important;
+  position: fixed;
+  border-radius: 21px;
+  bottom: 20px;
+  right: 20px;
+  width: 2.8125rem;
+  line-height: 1.8125rem;
+  display: none;
+}
+
+#asd {
+  width: 100%;
+  overflow-x: hidden;
+}
