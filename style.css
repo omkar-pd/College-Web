@@ -110,6 +110,9 @@ ul li a:hover {
 
 /* Media Queries for responsive website */
 @media only screen and (max-width: 1150px) {
+  html {
+    overflow-x: hidden;
+  }
   .my-card {
     padding: 0;
     justify-content: center;
@@ -127,9 +130,19 @@ ul li a:hover {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .col-12 > :first-child {
-    margin-left: -60px;
+    margin-left: -8%;
+  }
+  .ml-5 {
+    margin-left: 0rem !important;
+  }
+  .footer,
+  .my-card {
+    padding-left: 0rem !important;
+  }
+  .carousel-inner {
+    margin-left: 15px;
   }
 }
 
