@@ -7,7 +7,8 @@ body {
   overflow-x: hidden;
 }
 
-.container-fluid h3,
+.container-fluid h1,
+h3,
 h4,
 h5,
 h6 {
@@ -19,6 +20,9 @@ h6 {
   max-width: 400px;
   height: auto;
   /* margin-left: 25px; */
+}
+.circular {
+  margin-left: 0px !important;
 }
 .mynav {
   color: white !important;
@@ -68,11 +72,8 @@ form.example button {
 .card-btn {
   position: absolute;
   left: 29%;
-  /* box-shadow: 2px 3px 2px 2px black; */
   border-radius: 30px;
   background-color: #343a40;
-  /* background-color: #000080 !important; */
-  /* padding: 8px; */
 }
 .navbar-nav li:hover > ul.dropdown-menu {
   display: block;
@@ -99,16 +100,14 @@ ul.dropdown-menu a:hover {
   transform: rotate(-90deg);
 }
 nav ul li a:hover {
-  /* border-bottom: 1px solid red; */
   text-decoration: none !important;
-  /* box-shadow: 4px 5px !important; */
+
   border-radius: 5px;
 }
 
 ul li a:hover {
   color: black !important;
   text-decoration: none !important;
-  /* background-color: #fe7f9c !important; */
 }
 
 .mynav ul li a {
@@ -137,12 +136,22 @@ ul li a:hover {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .col-12 > :first-child {
-    margin-left: -8%;
+@media only screen and (max-width: 550px) {
+  .circular {
+    display: flex;
+    justify-content: center;
   }
-  .ml-5 {
+  .circular-1 {
+    margin-top: 10px;
+  }
+
+  .ml-5,
+  .ml-4,
+  .mx-4,
+  .pl-5,
+  .px-5 {
     margin-left: 0rem !important;
+    padding-left: 0 !important;
   }
   .footer,
   .my-card {
@@ -150,6 +159,14 @@ ul li a:hover {
   }
   .carousel-inner {
     margin-left: 15px;
+  }
+  .col-12 {
+    padding-left: 0px !important;
+  }
+  .jumbotron .col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
