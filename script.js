@@ -8,10 +8,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -24,3 +21,27 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// forms
+let className = document.querySelectorAll(".className");
+let val = document.querySelector(".addForm");
+console.log(className);
+
+val.addEventListener("change", function () {
+  // className[val.value].style.display = "block";
+  for (let i = 0; i < className.length; i++) {
+    if (i == val.value) {
+      className[i].style.display = "block";
+    } else {
+      className[i].style.display = "none";
+    }
+  }
+});
+// let key = Object.keys(className);
+// console.log(key);
+// for (let i = 0; i < addForm.length; i++) {
+//   addForm[i].addEventListener("click", function () {
+//     console.log(`${addForm[i]} is clicked}`);
+//     className[i].classList.toggle("showForm");
+//     // className[i].classList.toggle("showForm");
+//   });
+// }

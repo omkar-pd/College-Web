@@ -168,6 +168,16 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
   }
+  /* GOogle Forms on Admission page */
+  .className {
+    margin: 0px;
+    padding: 0px;
+  }
+  /* Select Option on Admission Page */
+  select {
+    width: 80%;
+    margin: 25px;
+  }
 }
 
 #btn-back-to-top {
@@ -185,4 +195,21 @@ ul li a:hover {
 #asd {
   width: 100%;
   overflow-x: hidden;
+}
+
+.className {
+  display: none;
+}
+@media only screen and (min-width: 551px) {
+  select {
+    width: 30%;
+    margin: 25px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .className {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
